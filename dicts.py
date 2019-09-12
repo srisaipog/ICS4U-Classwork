@@ -17,8 +17,8 @@ grades["Max"] = 100
 
 grades.pop("Friend")
 
-for grade in grades:
-    print(f"{grade}: {grades[grade]}")
+for name in grades:
+    print(f"{name}: {grades[name]}")
 
 grades["Max"] = 101
 
@@ -26,6 +26,18 @@ print()
 print()
 
 print(grades)
+
+for name in grades.keys():
+    grades[name] = None
+
+for grade in grades.values():
+    print(grade)
+
+print(grades)
+
+print(grades.values())
+print(grades.keys())
+
 
 exit()
 quit()
