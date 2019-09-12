@@ -20,6 +20,8 @@ grades.pop("Friend")
 for grade in grades:
     print(f"{grade}: {grades[grade]}")
 
+grades["Max"] = 101
+
 print()
 print()
 
