@@ -24,3 +24,6 @@ print()
 print()
 
 print(grades)
+
+exit()
+quit()
