@@ -38,6 +38,9 @@ print(grades)
 print(grades.values())
 print(grades.keys())
 
+if "Max" in grades:
+    print("Jhooray")
+
 
 exit()
 quit()
