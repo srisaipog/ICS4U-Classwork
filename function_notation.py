@@ -28,3 +28,4 @@ def function_nom(parameter_1: type, parameter_2: type) -> return_type:
     Returns:
         Explain what the function returns/does
     '''
+    pass
