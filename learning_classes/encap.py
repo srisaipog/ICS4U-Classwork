@@ -11,6 +11,7 @@ class Student:
     def __init__(self, name: str, age: int):
         self.name = name
         self._age = age
+        self.__hidden = "haha"
 
     def set_age(self, age: int): # setter
         # Verify that the value is an int
@@ -22,6 +23,8 @@ class Student:
 
     def get_age(self): # getter
         return self._age
+
+    
 
 
 s = Student("Smith", 5)
@@ -37,3 +40,4 @@ s._age = "3sf3gs" # rewrites s._age
 
 print(s.get_age())
 print(s.name)
+print(s.__hidden)
