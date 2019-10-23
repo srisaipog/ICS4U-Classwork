@@ -1,0 +1,90 @@
+"""
+name: str
+cost: int:
+nutrition: int
+"""
+class Food:
+    """
+    Attrs:
+        name (str): the name of the food
+        cost (int): how much the food costs
+        nutrution (int): how nutrutious the food is
+    """
+
+    def __init__(self, name: str, cost: int, nutrition: int):
+        """Create a food object
+
+        Args:
+            name: the name of the food
+            cost: how much the food costs
+            nutrution: how nutritious the food is
+        """
+
+        self.name = name
+        self.cost = cost
+        self.nutrition = nutrition
+
+
+
+class Dog:
+    """ Creates a dog
+    Attributes:
+        breed (str): The breed of the dog
+        name (str): The name of the dog
+        happiness (int): Happiness value of the dog
+    """
+
+    def __init__(self, breed: str, name: str, happiness: int = 100):
+        """Creates a dog object
+
+        Args:
+            breed: the breed of the dog
+            name: the name of the dog
+            happiness: the happiness value of the dog
+        """
+
+        self.name = name
+        self.breed = breed
+        self.happiness = happiness
+
+    
+    def __str__(self) -> str:
+        return f"Happiness: {self.happiness}"
+    
+
+    def eat(self, food: Food):
+        """Gets the dog to eat some food
+
+        Increases dog's happiness by 10% of the food's nutrition
+
+        Args:
+            food: food item for dog to eat
+        """
+
+        self.happiness += 0.1 * food.nutrition
+
+    
+    def barf(self):
+        """Makes the dog bark
+        """
+        print("RUFF RUFF")
+
+
+def main():
+
+    sausage = Food("Sausage", 24, 100)
+    rogers = Dog("Cat", "Rogers")
+    chocolate = Food("Chocolate", 5, -696969420)
+    dukey = Dog("Mutt", "Dukey")
+
+    print(rogers.happiness)
+    rogers.eat(sausage)
+    print(rogers.happiness)
+    rogers.eat(chocolate)
+    print(rogers.happiness)
+
+    print(rogers)
+
+
+if __name__ == "__main__":
+    main()
