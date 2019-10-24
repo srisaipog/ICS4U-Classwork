@@ -22,7 +22,10 @@ class Person:
             self._first_name = first
             self._last_name = last
     
+# Getters ans setters for every attribute
 
+# Encapsulate if you are going to relase
+# code to the public
 
 VOTING_AGE = 18
 
