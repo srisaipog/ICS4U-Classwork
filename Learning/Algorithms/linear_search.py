@@ -16,8 +16,7 @@ from typing import List
 # 3. Get list of all occurances.
 
 
-
-def linear_search(target: int, numbers: List[int], search_type: str="basic") -> int:
+def linear_search(target: int, numbers: List[int], search_type: str = "basic") -> int:
     """
     Args:
         target (int): the number to find
@@ -50,6 +49,7 @@ def linear_search(target: int, numbers: List[int], search_type: str="basic") -> 
 
     else:
         return linear_search(target, numbers)
+
 
 def test_linear_search():
     # Basic search
