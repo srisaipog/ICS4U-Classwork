@@ -17,8 +17,21 @@ def linear_search(target: int, data: List) -> int:
 
 def binary_search(target: int, data: List) -> int:
     start = 0
-    end = len(data) - 1
-    middle = end // 2
+    end = len(data) -1
+    mid = (start + end) // 2
+
+    while True:
+        if data[mid] == target:
+            return mid
+        elif data[mid] > target:
+            end = mid
+            mid = (start + end) // 2
+        elif data[mid] < target:
+            start = mid
+            mid = (start + end) // 2
+        
+        if end - start == 1:
+            return -1
 
 
 for i in range(1, 12):

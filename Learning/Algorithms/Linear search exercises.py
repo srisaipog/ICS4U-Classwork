@@ -44,7 +44,7 @@ def exercise_2(num_to_find: int, list_of_nums: List[int]) -> int:
     """
     index = -1
     for i in range(len(list_of_nums)):
-        if list_if_nums[i] == num_to_find:
+        if list_of_nums[i] == num_to_find:
             index = i
         
     return index
