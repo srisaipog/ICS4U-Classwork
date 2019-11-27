@@ -16,9 +16,32 @@ def sum_up_to(n: int) -> int:
         return 1
     else:
         return n + sum_up_to(n-1)
+'''
+messages = []
+
+def sum_up_to_show(n: int) -> int:
+    messages.append(f"sum_up_to_show({n})")
+    if n == 1:
+        messages[-1] += " -- Return 1"
+        return 1
+    else:
+        return n + sum_up_to_show(n-1)
 
 
-print(sum_up_to(5))
+print(sum_up_to_show(5))
+
+messages.reverse()
+print(messages)
+for mess in messages:
+    print(mess)
+'''
+
+# base case (n = 1)
+# recursive case
+
+def factorial(n):
+    if n == 1:
+        return 1
 
 
 def main():
