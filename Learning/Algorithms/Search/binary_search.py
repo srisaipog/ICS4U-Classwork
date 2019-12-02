@@ -8,7 +8,8 @@ from os import system
 def binary_search(find: int, numbers: List[int]) -> int:
     first = 0
     last = len(numbers) - 1
-    mid = last + first // 2
+    # mid = (last + first) // 2
+    mid = last
 
     while True:
 
