@@ -84,8 +84,17 @@ wire_1 = [central_port]
 wire_2 = [central_port]
 
 wire_1 = [central_port] + movements(wire_1[0], w1_instructions)
+print("wire 1 done")
+print(wire_1)
+print()
 wire_2 = [central_port] + movements(wire_2[0], w2_instructions)
+print("wire 2 done")
+print(wire_2)
+print()
 tangles = find_tangles(wire_1, wire_2)
+print("Found tangles")
+print(tangles)
+print()
 
 closest_tangle = find_closest_manhattan_distance(central_port, tangles)
 print(closest_tangle)
