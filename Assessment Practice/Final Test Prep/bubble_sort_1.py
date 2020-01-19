@@ -24,7 +24,6 @@ def bubble_sort(nums: List[int]) -> List[int]:
 
 import random
 
-
 print(bubble_sort([1, 2, 3, 4, 5]))
 print(bubble_sort([5, 4, 3, 2, 1, 0]))
 print(bubble_sort([random.randrange(100) for _ in range(10)]))
