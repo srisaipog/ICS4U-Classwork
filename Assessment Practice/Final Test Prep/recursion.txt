@@ -1,0 +1,6 @@
+
+
+def function(parameter(s)):
+    # base_case(s)
+
+    # recursive step(s)
